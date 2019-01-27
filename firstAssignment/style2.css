@@ -13,7 +13,7 @@ body{
 	flex-direction: row;
 	position: absolute;
 	top: 12%;
-	right: 16%;
+	right: 30%;
 }
 
 .LeftDiv{
@@ -24,7 +24,7 @@ body{
 	flex:1;
 	background-color: white;
 	width: 650px;
-	height: 650px;
+	height: 500px;
 }
 img{
 	width: 400px;
@@ -33,7 +33,7 @@ img{
 .InsDiv{
 	position: absolute;
 	top: 9%;
-	right: 8%;
+	right: 13%;
 }
 p{
 	font-weight: 600;
