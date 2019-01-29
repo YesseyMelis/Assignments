@@ -2,30 +2,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Registration system PHP and MySQL</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="style2.css">
+	<meta charset="utf-8">
+	<title>Registration</title>
 </head>
 <body>
-  <div class="header">
-  	<h2>Login</h2>
-  </div>
-	 
-  <form method="post" action="login.php">
-  	<?php include('errors.php'); ?>
-  	<div class="input-group">
-  		<label>Username</label>
-  		<input type="text" name="username" >
-  	</div>
-  	<div class="input-group">
-  		<label>Password</label>
-  		<input type="password" name="password">
-  	</div>
-  	<div class="input-group">
-  		<button type="submit" class="btn" name="login_user">Login</button>
-  	</div>
-  	<p>
-  		Not yet a member? <a href="register.php">Sign up</a>
-  	</p>
-  </form>
+	<div class = "FullDiv">
+		<div class = "leftDiv">
+		</div>
+		<div class = "RightDiv">
+			<div class = "InsDiv">
+				<h1>Sign In</h1>
+				<span><i>Account Registration</i></span>
+				<form method="post" action="login.php" onsubmit="return LogInValidForm()">
+					<span><a href="register.php"><i>Sign up here</i></a></span></br>
+					<p>YOUR EMAIL</p>
+					<input type="text" name="email" id="email" placeholder="your-email@example.com">
+					<p>YOUR PASSWORD</p>
+					<input type="password" name="password" id="password" placeholder="Write ypur password"></br></br></br>
+					<input type="submit" name="login_user" value="Sign In">
+				</form>
+
+			</div>
+		</div>
+	</div>
+	<script src = "script.js"></script>
 </body>
 </html>
