@@ -4,6 +4,7 @@
 	<title>MyShop</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="aibol.js" defer></script>
 </head>
 <body>
 	<div class="headContent">
@@ -12,9 +13,9 @@
 			<a href="basket.html"><img src="img/cart.png" alt="cart"></a></div>
 		<div class="heat">shop</div>
 	</div>
-	<div class="content">
+	<div class="content contentWhenClosed" id="content">
 	<div class="sorting">
-			<select>
+			<select onchange="sort()" id = "selectedSort"> 
 				<option>Default sorting</option>
 				<option>Ascending prices</option>
 				<option>Decending prices</option>
@@ -88,7 +89,7 @@
 
 
 	</div>
-		<div class="info"> <!--Когда click на объект делаешь тогда должен появляться и исшезать когда нажымаешь на другое место или объект-->
+		<div class="info" id= "info"> <!--Когда click на объект делаешь тогда должен появляться и исшезать когда нажымаешь на другое место или объект-->
 			<div class="hoverme"><img src="img/img5.jpg" alt="img" id = "hoveredImg"></div>
 			<div class="infoContent">
 				<div class="name_info">I Git Code</div>
