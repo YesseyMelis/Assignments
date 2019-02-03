@@ -63,16 +63,16 @@ select{
 	top:10%;
 }
 .content{
-	margin:100px;
+	margin:0px;
 	margin-top: 150px;
 	display: flex;
 	flex-wrap: wrap;
 }
 .card{
-	width: 24%;
+	width: 21%;
 	text-align: center;
 	margin-bottom: 30px;
-	margin:5px;
+	margin:30px;
 }
 .card .price {
 	margin-bottom: 15px;
@@ -152,4 +152,10 @@ select{
 .contentWhenOpened{ /*вот это добовлять когда info окно открывается*/
 	opacity: 0.5;
   	filter: alpha(opacity=50);
+}
+.close{
+	display: none;
+}
+.open{
+	display: block;
 }
